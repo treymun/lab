@@ -6,6 +6,6 @@ class Account:
 
     def withdraw(self, amount):
 
-    def getbalance(self):
+    def get_balance(self):
 
-    def getname(self):
+    def get_name(self):
