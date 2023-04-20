@@ -24,8 +24,12 @@ class Test:
         assert self.a1.withdraw(0) is False
         assert self.a1.get_balance() == 0
 
-        assert self.a1.deposit(1.5) is True
+        assert self.a1.deposit(2) is True
         assert self.a1.withdraw(1) is True
-        assert self.a1.get_balance() == 0.5
+        assert self.a1.get_balance() == 1
+
+        assert self.a1.deposit(1) is True
+        assert self.a1.withdraw(3) is False
+        assert self.a1.get_balance() == 2
 
 
